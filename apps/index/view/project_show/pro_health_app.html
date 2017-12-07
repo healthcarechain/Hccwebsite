@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人健康应用</title>
+    <link type="text/css" href="__static__/css/projectshow.css" rel="stylesheet"/>
+    <script src="__static__/js/jquery.min.js" ></script>
+</head>
+<body>
+{include file='index/index_top'}
+<div class="app_first">
+    <div class="app_first_word">
+        <p>Feel a modern </p>
+        <p style="padding-bottom:10%;">touch</p>
+        追踪健身记录，测量心率活动数据，密切关注自己的健康状况。<br/>
+        Hcc Watch Series 1 搭载双核处理器和 watchOS 4 强大的<br/>
+        新功能，让这一切在转瞬之间就能实现。<br/>
+        <img src="__static__/img/f_but.jpg" class="f_but"/>
+    </div>
+
+    <img src="__static__/img/w_1.jpg" class="f_p_1"/>
+    <img src="__static__/img/w_2.jpg" class="f_p_2"/>
+    <img src="__static__/img/w_4.jpg" class="f_p_3"/>
+    <img src="__static__/img/w_5.jpg" class="f_p_4"/>
+</div>
+<div class="app_sec">
+        <div class="app_sec_pic"><img src="__static__/img/s_1.jpg" /></div>
+    <div class="app_sec_word">
+        <p>Technology</p>
+        Vestibulum cursus nunc. Suspendisse adipiscing . Nunc non sem volutpat<br/>
+        urna. Cras consectetuer adipiscing ligula. Sed lacinia, risus sit amet risus.<br/>
+        Aliquam tempus enim aliquam dolor gravida elit.<br/>
+        <li><img src="" /></li>
+        <li><img src="" /></li>
+        <li><img src="" /></li>
+    </div>
+</div>
+<div class="app_thr">
+    <p>See our screenshot gallery</p>
+    <div class="app_thr_p">
+        <li><img src="__static__/img/t_1.jpg" /><div>Curabitur blandit</div></li>
+        <li><img src="__static__/img/t_2.jpg" /><div>Lorem ipsum dolor</div></li>
+        <li><img src="__static__/img/t_3.jpg" /><div>Health CareChain</div></li>
+        <li><img src="__static__/img/t_4.jpg" /><div>Fusce congue</div></li>
+    </div>
+    <div class="app_thr_bot">
+        <input type="image" src="__static__/img/t_icon_1.jpg" style="padding-left:47%;width:10%"/>
+        <input type="image" src="__static__/img/t_icon_2.jpg" style="padding-left:18%;width:10%"/>
+        <img src="__static__/img/t_b_1.jpg" />
+    </div>
+</div>
+<div class="app_for">
+<p style="padding-top:13.8%;">Hcc CareChain Watch</p>
+    <p>Intelligent detection protects your health</p>
+    <img src="__static__/img/for_but.jpg" />
+</div>
+<div class="app_fiv">
+<li id="fiv_left">
+    <p style="padding-top:8%;">Hcc Health</p>
+    <p>CareChain Watch</p>
+    <img src="__static__/img/w_3.jpg" />
+</li>
+    <li id="fiv_center">
+        <p style="padding-top:10%;">If you have any </p>
+        <p>requirements,</p>
+        <p>please feel free to </p>
+        <p style="padding-bottom:40px;">contact us</p>
+        Hcc CareChain Watch<br/>
+        Intelligent detection protects your health<br/>
+        <img src="__static__/img/fiv_center_but.jpg" style="padding-top:60px"/>
+    </li>
+    <li id="fiv_right">
+        <p style="padding-top:40px;">Set it</p>
+        <p>according</p>
+        <p>to your needs</p>
+    </li>
+</div>
+{include file='index/index_bottom'}
+</body>
+</html>
+<script>
+    var html = document.documentElement;
+
+    // 封装一个函数
+    function fontS(){
+        // 获取 html 的宽
+        var hW = html.offsetWidth;
+        // 计算字体大小，这里是 html 宽的五十分之一
+        var hS = hW / 120;
+        // 给刚开始时的 html 设置字体大小
+        html.style.fontSize = hS + "px";
+    }
+    // 当窗口大小改变时执行函数
+    fontS();
+    window.onresize = function(){
+        location.reload();
+        fontS();
+    }
+</script>

@@ -1,0 +1,51 @@
+<!-- 标题栏-->
+<link type="text/css" href="__static__/css/top.css" rel="stylesheet" />
+<div class="top" id="top">
+    <img src="__static__/img/HCChain.png" />
+    <!-- 导航栏 -->
+    <div class="top_meau">
+        <ul>
+            <li class="meau_list"><a href="__back__">首页</a></li>
+            <li class="product_li">
+                产品介绍
+                <div class='pro_more'>
+                    <ul>
+                        <li class='more_li'>
+                            <a href='__back__/index.php/index/project_show/index'>行业解决方案</a>
+                        </li>
+                        <li class='more_li'>
+                            <!--<a href='__back__/index.php/index/project_show/pro_health_app'>个人健康应用</a>-->
+                            <a href='__back__/index.php/index/index/hope'>个人健康应用</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="meau_list" onclick="go()">媒体资讯</li>
+            <li class="meau_list"><a href="__back__/index.php/index/index/download">区块链</a></li>
+            <!--<li class="meau_list"><a href="__back__/index.php/index/about/index">关于我们</a></li>-->
+            <li class="meau_list"><a href="__back__/index.php/index/forum/index">INFO</a></li>
+        </ul>
+    </div>
+</div>
+<script src="__static__/js/jquery.min.js" ></script>
+<script>
+
+    $('.product_li').mouseover(function(){
+        $('.pro_more').css('display','block');
+    })
+    $('.product_li').mouseout(function(){
+        $('.pro_more').css('display','none');
+    })
+//    $('.top_meau li').click(function(){
+//        $('.top_meau li').removeClass('active');
+//        $(this).addClass('active');
+//    })
+//    $('.meau_list').eq(1).click(function(){
+//        location.href='__back__/index.php/index';
+//
+//    })
+    function go(){
+            location.href='__back__/index.php/index/index?a=1';
+    }
+
+</script>
